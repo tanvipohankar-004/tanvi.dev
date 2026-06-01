@@ -99,40 +99,35 @@ const renderFocusTags = () => {
   });
 };
 
-/* Projects */
-const renderProjects = () => {
-  const container = $("#featured-projects");
-  if (!container) return;
+/*Projects */
+  const renderProjects = () => {
+    const container = $("#featured-projects");
+    if (!container) return;
 
-  portfolioData.featuredProjects.forEach((project) => {
-    const card = createElement("article", "card project-card");
+    container.innerHTML = "";
 
-    card.innerHTML = `
-      <div class="project-image-wrap">
-        <img src="${project.image}" alt="${project.title} preview" class="project-image">
-      </div>
+    portfolioData.featuredProjects.forEach((project) => {
+      const card = createElement("article", "card project-card featured-project-card");
 
-      <div class="project-content">
-        <span class="project-status">${project.status}</span>
-        <p class="eyebrow">${project.category}</p>
-        <h3>${project.title}</h3>
-        <p class="project-tagline">${project.tagline}</p>
-        <p>${project.description}</p>
-
-        <div class="project-stack">
-          ${project.stack.map((tech) => `<span>${tech}</span>`).join("")}
+      card.innerHTML = `
+        <div class="project-logo-area">
+          <img src="${project.image}" alt="${project.title} logo" class="project-logo">
         </div>
 
-        <div class="project-actions">
-          <a href="${project.github}" class="text-link" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="${project.live}" class="text-link" target="_blank" rel="noopener noreferrer">Live Demo</a>
-        </div>
-      </div>
-    `;
+        <div class="project-content">
+          <h3>${project.title}</h3>
+          <p class="project-tagline">${project.tagline}</p>
 
-    container.appendChild(card);
-  });
-};
+          <a href="./projects.html" class="btn btn-secondary">
+            View Details
+          </a>
+        </div>
+      `;
+
+      container.appendChild(card);
+    });
+  };
+
 
 /* Tech Stack */
 const renderTechStack = () => {
