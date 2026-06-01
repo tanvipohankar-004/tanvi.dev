@@ -79,7 +79,7 @@ const portfolioData = {
       status: "Currently Building",
       github: "#",
       live: "#",
-      image: "./assets/images/projects/scentiora/preview.png"
+      image: "./assets/images/projects/scentiora-preview.png"
     },
     {
       title: "RateFlix Movies",
@@ -91,7 +91,7 @@ const portfolioData = {
       status: "Completed",
       github: "#",
       live: "#",
-      image: "./assets/images/projects/rateflix/preview.png"
+      image: "./assets/images/projects/rateflix-preview.png"
     },
     {
       title: "BeeExplorer",
@@ -103,7 +103,7 @@ const portfolioData = {
       status: "Completed",
       github: "#",
       live: "#",
-      image: "./assets/images/projects/beexplorer/preview.png"
+      image: "./assets/images/projects/beexplorer-preview.png"
     },
     {
       title: "SpendLess",
@@ -115,7 +115,7 @@ const portfolioData = {
       status: "Completed",
       github: "#",
       live: "#",
-      image: "./assets/images/projects/spendless/preview.png"
+      image: "./assets/images/projects/spendless-preview.png"
     }
   ],
 
