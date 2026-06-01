@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contact | Tanvi.Dev</title>
+  <meta name="description" content="Contact Tanvi G. Pohankar for software development opportunities, collaborations, internships, freelance projects, and professional networking.">
+
+  <link rel="icon" type="image/png" href="./assets/images/logo/favicon.png">
+  <link rel="apple-touch-icon" href="./assets/images/logo/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="./index.html" class="brand" aria-label="Tanvi.Dev Home">
+        <img src="./assets/images/logo/tanvi-logo.png" alt="" class="brand-logo">
+        <span>Tanvi.Dev</span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="./index.html" class="nav-link">Home</a>
+        <a href="./about.html" class="nav-link">About</a>
+        <a href="./projects.html" class="nav-link">Projects</a>
+        <a href="./resume.html" class="nav-link">Resume Hub</a>
+        <a href="./certifications.html" class="nav-link">Certifications</a>
+        <a href="./contact.html" class="nav-link active">Contact</a>
+      </nav>
+
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="page-hero section-padding">
+      <div class="container">
+        <p class="eyebrow">Contact</p>
+        <h1>Open to opportunities, collaborations, and meaningful conversations.</h1>
+        <p class="page-description" id="contact-message"></p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section-padding section-muted">
+      <div class="container">
+        <div class="contact-layout">
+          <!-- Contact Links -->
+          <article class="card contact-card-primary">
+            <p class="eyebrow">Professional Contact</p>
+            <h2>Let’s connect.</h2>
+            <p class="contact-description">
+              Reach out for software development opportunities, backend-focused roles,
+              frontend projects, collaborations, internships, or technical discussions.
+            </p>
+
+            <div class="contact-links" id="contact-links"></div>
+          </article>
+
+          <!-- Contact Form -->
+          <article class="card contact-form-card">
+            <p class="eyebrow">Message</p>
+            <h2>Send a message.</h2>
+
+            <form
+              id="contact-form"
+              class="contact-form"
+              action="https://formsubmit.co/tanvi.g.pohankar@gmail.com"
+              method="POST"
+            >
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_subject" value="New message from Tanvi.Dev">
+              <input type="hidden" name="_template" value="table">
+
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input id="name" type="text" name="name" placeholder="Your name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" type="email" name="email" placeholder="your.email@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" id="submit-btn">
+                Send Message
+              </button>
+
+              <p class="form-status" id="form-status"></p>
+            </form>
+          </article>
+        </div>
+
+        <!-- Quick Info -->
+        <div class="contact-side-grid contact-info-grid">
+          <article class="card contact-mini-card">
+            <span>Location</span>
+            <p id="contact-location"></p>
+          </article>
+
+          <article class="card contact-mini-card">
+            <span>Status</span>
+            <p>Actively Building & Open to Opportunities</p>
+          </article>
+
+          <article class="card contact-mini-card">
+            <span>Focus</span>
+            <p>Backend Systems, SQL & Product Workflows</p>
+          </article>
+
+          <article class="card contact-mini-card">
+            <span>Availability</span>
+            <p>Full-Time Roles, Internships, Projects & Collaborations</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div>
+        <a href="./index.html" class="footer-brand">Tanvi.Dev</a>
+        <p>Designed, developed, and maintained by Tanvi G. Pohankar.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="./projects.html">Projects</a>
+        <a href="./resume.html">Resumes</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+
+      <p>© <span id="current-year"></span> Tanvi G. Pohankar</p>
+    </div>
+  </footer>
+
+  <script src="./js/data.js"></script>
+  <script src="./js/contact.js"></script>
+</body>
+</html>

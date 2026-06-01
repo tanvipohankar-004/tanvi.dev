@@ -68,56 +68,86 @@ const portfolioData = {
     "Practical Development"
   ],
 
-  featuredProjects: [
+    featuredProjects: [
     {
-      title: "SCENTIORA",
-      tagline: "From Scents to Signatures",
-      category: "Luxury Fragrance Website",
-      description:
-        "A fragrance website focused on premium visual design, structured interface flow, and responsive frontend implementation.",
-      stack: ["HTML", "CSS", "JavaScript"],
-      status: "Currently Building",
-      github: "#",
-      live: "#",
-      image: "./assets/images/projects/scentiora-preview.png"
+        title: "SCENTIORA",
+        tagline: "From Scents to Signatures",
+        category: "Backend-Integrated Product Website",
+        description:
+        "A luxury fragrance website currently being developed with frontend implementation and planned backend integration for product, user, and system workflows.",
+        stack: [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Spring Boot",
+        "Hibernate",
+        "JPA",
+        "REST APIs",
+        "Spring Security",
+        "MySQL"
+        ],
+        status: "Currently Building",
+        github: "https://github.com/tanvipohankar-004/scentiora-luxury-fragrances",
+        live: "#",
+        image: "./assets/images/projects/scentiora/logo.png"
     },
     {
-      title: "RateFlix Movies",
-      tagline: "Let's Have Some Charcha",
-      category: "Movie Discovery Website",
-      description:
+        title: "ARMS",
+        tagline: "Book. Board. Fly.",
+        category: "Backend-Integrated Airline Reservation System",
+        description:
+        "An upcoming backend-focused airline reservation system planned around structured workflows, database design, authentication, and REST API-based architecture.",
+        stack: [
+        "Java",
+        "Spring Boot",
+        "Hibernate",
+        "JPA",
+        "REST APIs",
+        "Spring Security",
+        "MySQL"
+        ],
+        status: "Upcoming",
+        github: "#",
+        live: "#",
+        image: "./assets/images/projects/arms-preview.png"
+    },
+    {
+        title: "RateFlix Movies",
+        tagline: "Let's Have Some Charcha",
+        category: "Movie Discovery Website",
+        description:
         "A movie-focused web project built around browsing, visual presentation, and user-friendly content discovery.",
-      stack: ["HTML", "CSS", "JavaScript"],
-      status: "Completed",
-      github: "#",
-      live: "#",
-      image: "./assets/images/projects/rateflix-preview.png"
+        stack: ["HTML", "CSS", "JavaScript"],
+        status: "Completed",
+        github: "https://github.com/tanvipohankar-004/rateflix-movies",
+        live: "https://rateflix-movies.netlify.app/",
+        image: "./assets/images/projects/rateflix-preview.png"
     },
     {
-      title: "BeeExplorer",
-      tagline: "Explore Nature Together",
-      category: "Nature Exploration Website",
-      description:
+        title: "BeeExplorer",
+        tagline: "Explore Nature Together",
+        category: "Nature Exploration Website",
+        description:
         "A responsive nature-themed website focused on visual storytelling, clean layout structure, and exploration-based browsing.",
-      stack: ["HTML", "CSS", "JavaScript"],
-      status: "Completed",
-      github: "#",
-      live: "#",
-      image: "./assets/images/projects/beexplorer-preview.png"
+        stack: ["HTML", "CSS", "JavaScript"],
+        status: "Completed",
+        github: "https://github.com/tanvipohankar-004/BeExplorer",
+        live: "https://beexplorer.netlify.app/",
+        image: "./assets/images/projects/beexplorer-preview.png"
     },
     {
-      title: "SpendLess",
-      tagline: "Track Every Penny Wisely",
-      category: "Expense Tracking App",
-      description:
+        title: "SpendLess",
+        tagline: "Track Every Penny Wisely",
+        category: "Expense Tracking App",
+        description:
         "A spending tracker project focused on budget visibility, expense organization, and simple financial tracking interactions.",
-      stack: ["HTML", "CSS", "JavaScript"],
-      status: "Completed",
-      github: "#",
-      live: "#",
-      image: "./assets/images/projects/spendless-preview.png"
+        stack: ["HTML", "CSS", "JavaScript"],
+        status: "Completed",
+        github: "https://github.com/tanvipohankar-004/SpendLess-ManagingSpendings",
+        live: "https://spendless-managingspendings.netlify.app/",
+        image: "./assets/images/projects/spendless-preview.png"
     }
-  ],
+    ],
 
   techStack: [
     {
@@ -322,7 +352,7 @@ about: {
 
   contact: {
     email: "tanvi.g.pohankar@gmail.com",
-    whatsapp: "#",
+    whatsapp: "https://wa.me/7809172424",
     linkedin: "https://www.linkedin.com/in/tanvi-pohankar-6386682b6/",
     github: "https://github.com/tanvipohankar-004",
     location: "Amravati, Maharashtra",

@@ -9,38 +9,21 @@ const navToggle = document.querySelector("#nav-toggle");
 const siteNav = document.querySelector("#site-nav");
 
 let activeFilter = "all";
+const allProjects = portfolioData.featuredProjects;
 
-const allProjects = [
-  ...portfolioData.featuredProjects,
-  {
-    title: "Airline Reservation Management System",
-    tagline: "Backend System in Progress",
-    category: "Backend Project",
-    description:
-      "An upcoming backend-focused project planned around Java, Spring Boot, relational databases, REST APIs, and structured system workflows.",
-    stack: ["Java", "Spring Boot", "MySQL", "REST APIs"],
-    status: "Upcoming",
-    github: "#",
-    live: "#",
-    image: "./assets/images/projects/arms/preview.png",
-    type: "backend"
-  }
-];
+if (navToggle && siteNav) {
+  navToggle.addEventListener("click", () => {
+    const isOpen = siteNav.classList.toggle("active");
+    navToggle.setAttribute("aria-expanded", isOpen);
+  });
+}
 
 const getProjectType = (project) => {
   const text = `${project.category} ${project.status} ${project.stack.join(" ")}`.toLowerCase();
 
-  if (text.includes("backend") || text.includes("spring") || text.includes("api")) {
-    return "backend";
-  }
-
-  if (text.includes("sql") || text.includes("mysql") || text.includes("database")) {
-    return "database";
-  }
-
-  if (text.includes("currently") || text.includes("upcoming")) {
-    return "building";
-  }
+  if (text.includes("upcoming") || text.includes("currently")) return "building";
+  if (text.includes("backend") || text.includes("spring") || text.includes("api")) return "backend";
+  if (text.includes("sql") || text.includes("mysql") || text.includes("database")) return "database";
 
   return "frontend";
 };
@@ -61,7 +44,7 @@ const renderProjects = (projects) => {
 
     card.innerHTML = `
       <div class="project-image-wrap">
-        <img src="${project.image}" alt="${project.title} preview" class="project-image">
+        <img src="${project.image}" alt="${project.title} logo" class="project-image">
       </div>
 
       <div class="project-content">
@@ -69,15 +52,13 @@ const renderProjects = (projects) => {
         <p class="eyebrow">${project.category}</p>
         <h3>${project.title}</h3>
         <p class="project-tagline">${project.tagline}</p>
-        <p>${project.description}</p>
 
         <div class="project-stack">
-          ${project.stack.map((tech) => `<span>${tech}</span>`).join("")}
+          ${project.stack.slice(0, 4).map((tech) => `<span>${tech}</span>`).join("")}
         </div>
 
         <div class="project-actions">
-          <a href="${project.github}" class="text-link" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="${project.live}" class="text-link" target="_blank" rel="noopener noreferrer">Live Demo</a>
+          <a href="./project-details.html?id=${project.id}" class="btn btn-secondary">View Details</a>
         </div>
       </div>
     `;
@@ -120,13 +101,6 @@ filterButtons.forEach((button) => {
 
 if (searchInput) {
   searchInput.addEventListener("input", applyFilters);
-}
-
-if (navToggle && siteNav) {
-  navToggle.addEventListener("click", () => {
-    const isOpen = siteNav.classList.toggle("active");
-    navToggle.setAttribute("aria-expanded", isOpen);
-  });
 }
 
 document.querySelector("#current-year").textContent = new Date().getFullYear();
