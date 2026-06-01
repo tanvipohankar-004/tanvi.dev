@@ -245,11 +245,10 @@ const portfolioData = {
     message:
       "Certifications and learning records are currently being organized and updated."
   },
-
-  about: {
+about: {
   intro: [
     "My primary interest lies in understanding how systems work internally — from backend workflows and database design to application structure and end-to-end flow.",
-    "At the same time, I believe a system should also feel intuitive and visually engaging for the user, which keeps me interested in frontend development, user experience, and product flow."
+    "At the same time, I believe a system should also feel intuitive and visually engaging for the user, which keeps me equally interested in frontend development, user experience, branding, and product flow."
   ],
 
   workflow: [
@@ -272,21 +271,32 @@ const portfolioData = {
     }
   ],
 
-  timeline: [
+  education: {
+    degree: "Bachelor of Engineering",
+    branch: "Computer Science Engineering",
+    college: "HVPM College of Engineering and Technology",
+    location: "Amravati, Maharashtra",
+    duration: "July 2022 – May 2026",
+    cgpa: "To Be Updated"
+  },
+
+  research: [
     {
-      year: "2024",
-      title: "Started Building Frontend Projects",
-      description: "Worked on responsive websites and visual project implementation."
-    },
-    {
-      year: "2025",
-      title: "Explored SQL & Database Concepts",
-      description: "Developed stronger interest in SQL, database design, and backend workflows."
-    },
-    {
-      year: "2026",
-      title: "Moving Toward Backend-Focused Development",
-      description: "Currently building projects around Java, Spring Boot, SQL, APIs, and complete system flow."
+      title: "Herbipedia: A Web-Based Educational Platform for Herbal Knowledge",
+      description: "Published in the International Journal of Innovative Research in Technology (IJIRT), Herbipedia is a web-based educational platform focused on structured herbal knowledge and user-friendly information access.",
+      contribution: [
+        "Developed frontend interfaces using HTML, CSS, and JavaScript",
+        "Implemented Login & Register functionality",
+        "Integrated Firebase Cloud Firestore for user data storage",
+        "Developed profile-based data retrieval workflows",
+        "Implemented session handling and route access restrictions",
+        "Contributed to documentation, research writing, and publication preparation"
+      ],
+      technologies: ["HTML", "CSS", "JavaScript", "Firebase"],
+      publication: "International Journal of Innovative Research in Technology (IJIRT)",
+      paperId: "194773",
+      status: "Published Research Paper",
+      link: "https://lnkd.in/dRYjtCZS"
     }
   ],
 

@@ -762,3 +762,193 @@ p {
   border-radius: var(--radius-md);
   text-align: center;
 }
+/* ================================
+   About Page
+================================ */
+
+.text-stack {
+  display: grid;
+  gap: 18px;
+}
+/* ================================
+   Education
+================================ */
+
+.education-card {
+  display: grid;
+  gap: 14px;
+}
+
+/* ================================
+   Education
+================================ */
+
+.education-card {
+  padding: 38px;
+}
+
+.education-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: stretch;
+}
+
+/* ================================
+   Left Section
+================================ */
+
+.education-primary {
+  display: grid;
+  gap: 22px;
+
+  padding: 32px;
+
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.education-primary h3 {
+  font-size: clamp(2rem, 3vw, 2.6rem);
+  line-height: 1.15;
+}
+
+.education-branch {
+  color: var(--text-primary);
+
+  font-size: 1.12rem;
+  font-weight: 600;
+}
+
+.education-college,
+.education-location {
+  color: var(--text-secondary);
+
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* ================================
+   Right Section
+================================ */
+
+.education-secondary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.education-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  min-height: 170px;
+  padding: 28px;
+
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+
+  background: rgba(255, 255, 255, 0.02);
+
+  transition: var(--transition);
+}
+
+.education-item:hover {
+  border-color: rgba(33, 192, 135, 0.4);
+  transform: translateY(-4px);
+}
+
+.education-item span {
+  display: inline-block;
+
+  margin-bottom: 14px;
+
+  color: var(--accent);
+
+  font-size: 0.82rem;
+  font-weight: 700;
+
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.education-item p {
+  color: var(--text-primary);
+
+  font-size: 1.08rem;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+/* ================================
+   Responsive
+================================ */
+
+@media (max-width: 900px) {
+
+  .education-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .education-secondary {
+    grid-template-columns: 1fr;
+  }
+
+  .education-card {
+    padding: 24px;
+  }
+
+  .education-primary {
+    padding: 24px;
+  }
+
+  .education-item {
+    min-height: auto;
+  }
+}
+
+/* ================================
+   Research Layout
+================================ */
+
+#research-section {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  align-items: stretch;
+}
+
+#research-section .card {
+  height: 100%;
+}
+
+/* ================================
+   Contribution List
+================================ */
+
+.research-contribution ul {
+  display: grid;
+  gap: 14px;
+
+  padding-left: 20px;
+  margin-top: 18px;
+}
+
+.research-contribution li {
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* ================================
+   Responsive
+================================ */
+
+@media (max-width: 992px) {
+
+  #research-section {
+    grid-template-columns: 1fr;
+  }
+}
