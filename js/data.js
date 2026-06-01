@@ -246,6 +246,70 @@ const portfolioData = {
       "Certifications and learning records are currently being organized and updated."
   },
 
+  about: {
+  intro: [
+    "My primary interest lies in understanding how systems work internally — from backend workflows and database design to application structure and end-to-end flow.",
+    "At the same time, I believe a system should also feel intuitive and visually engaging for the user, which keeps me interested in frontend development, user experience, and product flow."
+  ],
+
+  workflow: [
+    "Most of my projects begin with imagination and experimentation. I usually start by visualizing how a product should look, behave, and flow from a user’s perspective before planning the architecture, workflows, UI structure, assets, and implementation approach.",
+    "While building, I prefer working iteratively — refining interfaces, improving logic, testing features, fixing issues, and evolving projects phase by phase until they align with the intended experience and functionality."
+  ],
+
+  interests: [
+    {
+      title: "Backend Systems",
+      description: "Understanding application structure, services, APIs, database workflows, and internal system behavior."
+    },
+    {
+      title: "User Experience",
+      description: "Designing interfaces that are clear, usable, and visually structured for real users."
+    },
+    {
+      title: "Database Thinking",
+      description: "Working with SQL, ER modeling, relational schemas, and structured data flow."
+    }
+  ],
+
+  timeline: [
+    {
+      year: "2024",
+      title: "Started Building Frontend Projects",
+      description: "Worked on responsive websites and visual project implementation."
+    },
+    {
+      year: "2025",
+      title: "Explored SQL & Database Concepts",
+      description: "Developed stronger interest in SQL, database design, and backend workflows."
+    },
+    {
+      year: "2026",
+      title: "Moving Toward Backend-Focused Development",
+      description: "Currently building projects around Java, Spring Boot, SQL, APIs, and complete system flow."
+    }
+  ],
+
+  personality: [
+    {
+      title: "University Representative",
+      description: "Participated in student representation and coordination responsibilities."
+    },
+    {
+      title: "Anchoring & Public Speaking",
+      description: "Hosted events and participated in speaking activities during college."
+    },
+    {
+      title: "Creative Exploration",
+      description: "Explored poetry, theatre, elocution, debates, and event participation."
+    },
+    {
+      title: "SQL Injection Seminar",
+      description: "Presented a seminar on SQL Injection attacks and database security concepts."
+    }
+  ]
+},
+
   contact: {
     email: "tanvi.g.pohankar@gmail.com",
     whatsapp: "#",
