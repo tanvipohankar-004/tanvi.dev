@@ -22,6 +22,14 @@ const renderResumes = () => {
     const card = document.createElement("article");
     card.className = "card resume-card";
 
+    const focusItems = Array.isArray(resume.focus)
+      ? resume.focus
+      : [resume.focus];
+
+    const hasResume =
+      resume.filename &&
+      resume.filename !== "#";
+
     card.innerHTML = `
       <div class="resume-icon">
         <span>PDF</span>
@@ -34,20 +42,38 @@ const renderResumes = () => {
         </div>
 
         <h3>${resume.title}</h3>
-                    <div class="resume-focus">
-           ${(Array.isArray(resume.focus) ? resume.focus : [resume.focus])
-  .map((item) => `<span>${item}</span>`)
-  .join("")}
-            </div>
-        <p class="resume-description">${resume.description}</p>
 
-        <a
-          href="${resume.filename}"
-          class="btn btn-primary ${resume.buttonText === "Coming Soon" ? "disabled-btn" : ""}"
-          ${resume.buttonText === "Coming Soon" ? "" : "download"}
-        >
-          ${resume.buttonText}
-       
+        <div class="resume-focus">
+          ${focusItems
+            .map((item) => `<span>${item}</span>`)
+            .join("")}
+        </div>
+
+        <p class="resume-description">
+          ${resume.description}
+        </p>
+
+        ${
+          hasResume
+            ? `
+              <a
+                href="./assets/resumes/${resume.filename}"
+                class="btn btn-primary"
+                download
+              >
+                Download Resume
+              </a>
+            `
+            : `
+              <button
+                type="button"
+                class="btn btn-primary disabled-btn"
+                disabled
+              >
+                Coming Soon
+              </button>
+            `
+        }
       </div>
     `;
 
@@ -57,4 +83,8 @@ const renderResumes = () => {
 
 renderResumes();
 
-document.querySelector("#current-year").textContent = new Date().getFullYear();
+const currentYear = document.querySelector("#current-year");
+
+if (currentYear) {
+  currentYear.textContent = new Date().getFullYear();
+}
