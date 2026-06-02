@@ -209,17 +209,22 @@
     border-radius: 26px;
   }
 
-  .project-logo-area {
+    .project-logo-area {
     position: static;
     width: 104px;
     height: 104px;
-    margin: 0 0 18px;
+    margin: 0 auto 22px;
     border-radius: 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
-  .project-logo {
+    .project-logo {
     width: 68px;
     height: 68px;
+    object-fit: contain;
   }
 
   .project-content {
