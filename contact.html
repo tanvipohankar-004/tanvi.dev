@@ -19,7 +19,6 @@
 </head>
 
 <body>
-  <!-- Header -->
   <header class="site-header">
     <div class="container header-container">
       <a href="./index.html" class="brand" aria-label="Tanvi.Dev Home">
@@ -44,7 +43,6 @@
   </header>
 
   <main>
-    <!-- Hero -->
     <section class="page-hero section-padding">
       <div class="container">
         <p class="eyebrow">Contact</p>
@@ -53,11 +51,9 @@
       </div>
     </section>
 
-    <!-- Contact -->
     <section class="section-padding section-muted">
       <div class="container">
         <div class="contact-layout">
-          <!-- Contact Links -->
           <article class="card contact-card-primary">
             <p class="eyebrow">Professional Contact</p>
             <h2>Let’s connect.</h2>
@@ -69,21 +65,11 @@
             <div class="contact-links" id="contact-links"></div>
           </article>
 
-          <!-- Contact Form -->
           <article class="card contact-form-card">
             <p class="eyebrow">Message</p>
             <h2>Send a message.</h2>
 
-            <form
-              id="contact-form"
-              class="contact-form"
-              action="https://formsubmit.co/tanvi.g.pohankar@gmail.com"
-              method="POST"
-            >
-              <input type="hidden" name="_captcha" value="false">
-              <input type="hidden" name="_subject" value="New message from Tanvi.Dev">
-              <input type="hidden" name="_template" value="table">
-
+            <form id="contact-form" class="contact-form">
               <div class="form-group">
                 <label for="name">Name</label>
                 <input id="name" type="text" name="name" placeholder="Your name" required>
@@ -92,6 +78,17 @@
               <div class="form-group">
                 <label for="email">Email</label>
                 <input id="email" type="email" name="email" placeholder="your.email@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input
+                  id="subject"
+                  type="text"
+                  name="subject"
+                  placeholder="Opportunity, collaboration, or project discussion"
+                  required
+                >
               </div>
 
               <div class="form-group">
@@ -108,7 +105,6 @@
           </article>
         </div>
 
-        <!-- Quick Info -->
         <div class="contact-side-grid contact-info-grid">
           <article class="card contact-mini-card">
             <span>Location</span>
@@ -134,7 +130,6 @@
     </section>
   </main>
 
-  <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-container">
       <div>
@@ -153,6 +148,7 @@
   </footer>
 
   <script src="./js/data.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script src="./js/contact.js"></script>
 </body>
 </html>
