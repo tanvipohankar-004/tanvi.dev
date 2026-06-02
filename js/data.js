@@ -34,10 +34,6 @@ const portfolioData = {
     {
       label: "Email",
       url: "mailto:tanvi.g.pohankar@gmail.com"
-    },
-    {
-      label: "WhatsApp",
-      url: "https://wa.me/7809172424"
     }
   ],
 
@@ -295,7 +291,7 @@ const portfolioData = {
     description:
       "Published research paper for Herbipedia, a web-based educational platform for herbal knowledge.",
     image: "./assets/images/certifications/ijirt.png",
-    credential: "#"
+    credential: "./assets/images/certifications/ijirt.png"
   },
   {
     title: "SQL Intermediate",
@@ -322,7 +318,7 @@ const portfolioData = {
     description:
       "Completed structured Java Full Stack Development training focused on practical development workflows.",
     image: "./assets/images/certifications/logipool.png",
-    credential: "#"
+    credential: "./assets/images/certifications/logipool.png"
   },
   {
     title: "Pragati: Path to Future – Cohort 5",
@@ -331,7 +327,7 @@ const portfolioData = {
     description:
       "Completed Infosys Springboard Pragati Cohort 5 learning program focused on professional development.",
     image: "./assets/images/certifications/pragati.png",
-    credential: "#"
+    credential: "./assets/images/certifications/pragati.png"
   }
 ],
 
@@ -420,7 +416,6 @@ const portfolioData = {
 
   contact: {
     email: "tanvi.g.pohankar@gmail.com",
-    whatsapp: "https://wa.me/7809172424",
     linkedin: "https://www.linkedin.com/in/tanvi-pohankar-6386682b6/",
     github: "https://github.com/tanvipohankar-004",
     location: "Amravati, Maharashtra",
