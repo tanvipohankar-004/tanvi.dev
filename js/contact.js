@@ -141,3 +141,59 @@ if (form) {
 
 /* Footer Year */
 document.querySelector("#current-year").textContent = new Date().getFullYear();
+
+/*Email.js Initiation */
+
+emailjs.init("smZ0y3byHtEiYGfxl");
+
+const contactForm = document.getElementById("contact-form");
+
+contactForm.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const submitBtn = contactForm.querySelector("button");
+  const originalBtnText = submitBtn.innerText;
+
+  submitBtn.innerText = "Sending...";
+  submitBtn.disabled = true;
+
+  const templateParams = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    subject: document.getElementById("subject").value,
+    message: document.getElementById("message").value
+  };
+
+  try {
+
+    // MAIN MESSAGE TO YOU
+    await emailjs.send(
+      "service_yx72loj",
+      "template_reblpis",
+      templateParams
+    );
+
+    // AUTO REPLY TO USER
+    await emailjs.send(
+      "service_yx72loj",
+      "template_xuy3ips",
+      templateParams
+    );
+
+    alert("Message sent successfully.");
+
+    contactForm.reset();
+
+  } catch (error) {
+
+    console.error("EmailJS Error:", error);
+
+    alert("Something went wrong. Please try again.");
+
+  } finally {
+
+    submitBtn.innerText = originalBtnText;
+    submitBtn.disabled = false;
+
+  }
+});

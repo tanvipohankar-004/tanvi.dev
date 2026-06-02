@@ -42,12 +42,12 @@ const renderResumes = () => {
         <p class="resume-description">${resume.description}</p>
 
         <a
-          href="./assets/resumes/${resume.filename}"
-          class="btn btn-primary"
-          download
+          href="${resume.filename}"
+          class="btn btn-primary ${resume.buttonText === "Coming Soon" ? "disabled-btn" : ""}"
+          ${resume.buttonText === "Coming Soon" ? "" : "download"}
         >
-          Download Resume
-        </a>
+          ${resume.buttonText}
+       
       </div>
     `;
 

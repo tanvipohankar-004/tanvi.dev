@@ -1590,3 +1590,7 @@ p {
     grid-template-columns: 1fr;
   }
 }
+.disabled-btn {
+  pointer-events: none;
+  opacity: 0.7;
+}

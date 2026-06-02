@@ -255,31 +255,35 @@ const portfolioData = {
  resumes: [
   {
     title: "Software Engineering",
-      focus: [
+    focus: [
       "Projects",
       "Frontend",
       "Backend",
-      "SQL"
+      "SQL",
+      "Problem Solving"
     ],
-    status: "Active",
+    status: "In Progress",
     description:
-      "Role-focused resume for software engineering opportunities with practical projects, frontend work, backend foundations, SQL, and development workflows.",
+      "Resume currently being refined and optimized for role-specific opportunities, ATS compatibility, and structured technical presentation.",
     ats: true,
-    filename: "tanvipohankar_fresher_be_softwareengineer.pdf"
+    buttonText: "Coming Soon",
+    filename: "#"
   },
+
   {
     title: "Java Backend Engineering",
-        focus: [
+    focus: [
       "Java",
       "Spring Boot",
       "REST APIs",
       "SQL"
     ],
-    status: "Active",
+    status: "In Progress",
     description:
-      "Backend-focused resume tailored for Java, Spring Boot, Hibernate, JPA, REST APIs, SQL, and structured application development.",
+      "Backend-focused resume currently being refined for Java, Spring Boot, REST APIs, SQL, and structured application development roles.",
     ats: true,
-    filename: "tanvipohankar_fresher_be_backend.pdf"
+    buttonText: "Coming Soon",
+    filename: "#"
   }
 ],
 
