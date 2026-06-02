@@ -1578,6 +1578,21 @@ p {
   padding-inline: 16px;
   font-size: 0.78rem;
 }
+.certification-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.certification-actions .btn {
+  flex: 1;
+  justify-content: center;
+}
+
+.disabled-btn {
+  pointer-events: none;
+  opacity: 0.72;
+}
 
 @media (max-width: 1100px) {
   .certification-grid {
