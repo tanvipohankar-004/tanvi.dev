@@ -50,18 +50,29 @@ const initRoleTyping = () => {
 
 /* Profile */
 const renderProfile = () => {
-  $("#hero-description").textContent = portfolioData.profile.heroDescription;
-  $("#quick-intro").textContent = portfolioData.profile.quickIntro;
-  $("#profile-status").textContent = portfolioData.profile.status;
-  $("#contact-preview").textContent = portfolioData.contact.message;
-  $("#footer-meta").textContent = portfolioData.profile.footerText;
-  $("#current-year").textContent = new Date().getFullYear();
+  const profileStatus = $("#profile-status");
+  const footerMeta = $("#footer-meta");
+  const currentYear = $("#current-year");
+
+  if (profileStatus) {
+    profileStatus.textContent = portfolioData.profile.status;
+  }
+
+  if (footerMeta) {
+    footerMeta.textContent = portfolioData.profile.footerText;
+  }
+
+  if (currentYear) {
+    currentYear.textContent = new Date().getFullYear();
+  }
 };
 
 /* Social Links */
 const renderSocialLinks = () => {
   const container = $("#hero-links");
   if (!container) return;
+
+  container.innerHTML = "";
 
   portfolioData.socialLinks.forEach((item) => {
     const link = createElement("a", "text-link", item.label);
@@ -78,6 +89,8 @@ const renderSnapshot = () => {
   const container = $("#profile-snapshot");
   if (!container) return;
 
+  container.innerHTML = "";
+
   portfolioData.snapshot.forEach((item) => {
     const card = createElement("article", "card");
     const title = createElement("p", "eyebrow", item.title);
@@ -93,46 +106,49 @@ const renderFocusTags = () => {
   const container = $("#focus-tags");
   if (!container) return;
 
+  container.innerHTML = "";
+
   portfolioData.focusTags.forEach((tagText) => {
     const tag = createElement("span", "tag", tagText);
     container.appendChild(tag);
   });
 };
 
-/*Projects */
-  const renderProjects = () => {
-    const container = $("#featured-projects");
-    if (!container) return;
+/* Featured Projects */
+const renderProjects = () => {
+  const container = $("#featured-projects");
+  if (!container) return;
 
-    container.innerHTML = "";
+  container.innerHTML = "";
 
-    portfolioData.featuredProjects.forEach((project) => {
-      const card = createElement("article", "card project-card featured-project-card");
+  portfolioData.featuredProjects.forEach((project) => {
+    const card = createElement("article", "card project-card featured-project-card");
 
-      card.innerHTML = `
-        <div class="project-logo-area">
-          <img src="${project.image}" alt="${project.title} logo" class="project-logo">
-        </div>
+    card.innerHTML = `
+      <div class="project-logo-area">
+        <img src="${project.image}" alt="${project.title} logo" class="project-logo">
+      </div>
 
-        <div class="project-content">
-          <h3>${project.title}</h3>
-          <p class="project-tagline">${project.tagline}</p>
+      <div class="project-content">
+        <h3>${project.title}</h3>
+        <p class="project-tagline">${project.tagline}</p>
 
-          <a href="./projects.html" class="btn btn-secondary">
-            View Details
-          </a>
-        </div>
-      `;
+        <a href="./projects.html" class="btn btn-secondary">
+          View Details
+        </a>
+      </div>
+    `;
 
-      container.appendChild(card);
-    });
-  };
-
+    container.appendChild(card);
+  });
+};
 
 /* Tech Stack */
 const renderTechStack = () => {
   const container = $("#tech-stack");
   if (!container) return;
+
+  container.innerHTML = "";
 
   portfolioData.techStack.forEach((group) => {
     const card = createElement("article", "card");
@@ -148,79 +164,6 @@ const renderTechStack = () => {
   });
 };
 
-/* AI Companions */
-const renderAICompanions = () => {
-  const container = $("#ai-companions");
-  if (!container) return;
-
-  portfolioData.aiCompanions.forEach((tool) => {
-    const card = createElement("article", "card");
-    const title = createElement("h3", "", tool.name);
-    const usage = createElement("p", "", tool.usage);
-
-    card.append(title, usage);
-    container.appendChild(card);
-  });
-};
-
-/* Currently Building */
-const renderCurrentlyBuilding = () => {
-  const container = $("#currently-building");
-  if (!container) return;
-
-  portfolioData.currentlyBuilding.forEach((item) => {
-    const card = createElement("article", "card");
-    const title = createElement("h3", "", item.title);
-    const description = createElement("p", "", item.description);
-
-    card.append(title, description);
-    container.appendChild(card);
-  });
-};
-
-/* Capabilities */
-const renderCapabilities = () => {
-  const container = $("#services");
-  if (!container) return;
-
-  portfolioData.capabilities.forEach((item) => {
-    const card = createElement("article", "card");
-    const title = createElement("h3", "", item.title);
-    const description = createElement("p", "", item.description);
-
-    card.append(title, description);
-    container.appendChild(card);
-  });
-};
-
-/* Leadership */
-const renderLeadership = () => {
-  const container = $("#leadership-preview");
-  if (!container) return;
-
-  portfolioData.leadership.forEach((item) => {
-    const card = createElement("article", "card");
-    const title = createElement("h3", "", item.title);
-    const description = createElement("p", "", item.description);
-
-    card.append(title, description);
-    container.appendChild(card);
-  });
-};
-
-/* Resume Preview */
-const renderResumePreview = () => {
-  const container = $("#resume-preview-actions");
-  if (!container) return;
-
-  portfolioData.resumes.forEach((resume) => {
-    const link = createElement("a", "btn btn-secondary", resume.title);
-    link.href = resume.file;
-
-    container.appendChild(link);
-  });
-};
-
 /* Init */
 document.addEventListener("DOMContentLoaded", () => {
   initNavigation();
@@ -232,9 +175,4 @@ document.addEventListener("DOMContentLoaded", () => {
   renderFocusTags();
   renderProjects();
   renderTechStack();
-  renderAICompanions();
-  renderCurrentlyBuilding();
-  renderCapabilities();
-  renderLeadership();
-  renderResumePreview();
 });
