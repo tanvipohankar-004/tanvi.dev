@@ -283,11 +283,53 @@ const portfolioData = {
   }
 ],
 
-  certifications: {
-    status: "Updating Soon",
-    message:
-      "Certifications and learning records are currently being organized and updated."
+  certifications: [
+  {
+    title: "Herbipedia Research Publication",
+    issuer: "IJIRT",
+    category: "Research & Publication",
+    description:
+      "Published research paper for Herbipedia, a web-based educational platform for herbal knowledge.",
+    image: "./assets/images/certifications/ijirt.png",
+    credential: "#"
   },
+  {
+    title: "SQL Intermediate",
+    issuer: "HackerRank",
+    category: "Technical Certification",
+    description:
+      "Certification validating intermediate SQL querying and database problem-solving skills.",
+    image: "./assets/images/certifications/sql-intermediate.png",
+    credential: "https://www.hackerrank.com/certificates/930469f5ad38"
+  },
+  {
+    title: "SQL Basic",
+    issuer: "HackerRank",
+    category: "Technical Certification",
+    description:
+      "Certification validating foundational SQL querying and relational database concepts.",
+    image: "./assets/images/certifications/sql-basic.png",
+    credential: "https://www.hackerrank.com/certificates/8722d40f3c1c"
+  },
+  {
+    title: "Java Full Stack Development Training",
+    issuer: "Swami Logipool Infotech",
+    category: "Professional Training",
+    description:
+      "Completed structured Java Full Stack Development training focused on practical development workflows.",
+    image: "./assets/images/certifications/logipool.png",
+    credential: "#"
+  },
+  {
+    title: "Pragati: Path to Future – Cohort 5",
+    issuer: "Infosys Springboard",
+    category: "Industry Program",
+    description:
+      "Completed Infosys Springboard Pragati Cohort 5 learning program focused on professional development.",
+    image: "./assets/images/certifications/pragati.png",
+    credential: "#"
+  }
+],
 
   about: {
     intro: [
