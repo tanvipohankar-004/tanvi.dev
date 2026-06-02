@@ -252,20 +252,36 @@ const portfolioData = {
     }
   ],
 
-  resumes: [
-    {
-      title: "Software Engineer Resume",
-      target: "General software development opportunities",
-      status: "Updating Soon",
-      file: "#"
-    },
-    {
-      title: "Java Backend Resume",
-      target: "Backend-focused Java and SQL roles",
-      status: "In Development",
-      file: "#"
-    }
-  ],
+ resumes: [
+  {
+    title: "Software Engineering",
+      focus: [
+      "Projects",
+      "Frontend",
+      "Backend",
+      "SQL"
+    ],
+    status: "Active",
+    description:
+      "Role-focused resume for software engineering opportunities with practical projects, frontend work, backend foundations, SQL, and development workflows.",
+    ats: true,
+    filename: "tanvipohankar_fresher_be_softwareengineer.pdf"
+  },
+  {
+    title: "Java Backend Engineering",
+        focus: [
+      "Java",
+      "Spring Boot",
+      "REST APIs",
+      "SQL"
+    ],
+    status: "Active",
+    description:
+      "Backend-focused resume tailored for Java, Spring Boot, Hibernate, JPA, REST APIs, SQL, and structured application development.",
+    ats: true,
+    filename: "tanvipohankar_fresher_be_backend.pdf"
+  }
+],
 
   certifications: {
     status: "Updating Soon",
