@@ -108,8 +108,8 @@ HVPM College of Engineering and Technology, Amravati
 https://github.com/tanvipohankar-004
 
 ---
-<p align="center">
-  <img src="./assets/images/logo/tanvi-logo.png" alt="Tanvi.Dev Logo" width="140">
+<p>
+  <img src="./assets/images/logo/tanvi-logo.png" alt="Tanvi.Dev Logo" width="40">
   <h4>Designed and developed by Tanvi G. Pohankar.</h4 >
 </p>
 
