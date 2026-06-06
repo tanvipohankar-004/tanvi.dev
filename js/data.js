@@ -150,7 +150,7 @@ const portfolioData = {
   techStack: [
     {
       title: "Frontend",
-      items: ["HTML5", "CSS3", "JavaScript", "Responsive Design", "React (Exploring)"]
+      items: ["HTML5", "CSS3", "JavaScript", "Responsive Design"]
     },
     {
       title: "Backend Foundations",
@@ -158,11 +158,11 @@ const portfolioData = {
     },
     {
       title: "Databases & SQL",
-      items: ["MySQL", "MS SQL Server", "Advanced SQL", "ER Modeling", "Database Design"]
+      items: ["MySQL", "MS SQL Server", "Advanced SQL", "Database Design"]
     },
     {
       title: "Tools & Workflow",
-      items: ["Git", "GitHub", "VS Code", "Postman", "ChatGPT", "Claude", "Gemini"]
+      items: ["Git", "GitHub", "VS Code", "Postman", "Eclipse IDE", "Netlify"]
     }
   ],
 
@@ -250,20 +250,20 @@ const portfolioData = {
 
  resumes: [
   {
-    title: "Software Engineering",
+    title: "Software Development Resume",
     focus: [
-      "Projects",
-      "Frontend",
-      "Backend",
+      "Java",
       "SQL",
+      "Frontend Projects",
+      "Software Development",
       "Problem Solving"
     ],
-    status: "In Progress",
+    status: "Available",
     description:
-      "Resume currently being refined and optimized for role-specific opportunities, ATS compatibility, and structured technical presentation.",
+      "Software development resume focused on Java, SQL, responsive web applications, database-driven projects, certifications, research publication, and campus leadership.",
     ats: true,
-    buttonText: "Coming Soon",
-    filename: "#"
+    buttonText: "View Resume",
+    filename: "TanviPohankar_SoftwareEngineer_2026.pdf"
   },
 
   {
@@ -278,7 +278,7 @@ const portfolioData = {
     description:
       "Backend-focused resume currently being refined for Java, Spring Boot, REST APIs, SQL, and structured application development roles.",
     ats: true,
-    buttonText: "Coming Soon",
+    buttonText: "Updating",
     filename: "#"
   }
 ],

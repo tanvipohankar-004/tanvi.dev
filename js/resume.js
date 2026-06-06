@@ -53,27 +53,28 @@ const renderResumes = () => {
           ${resume.description}
         </p>
 
-        ${
-          hasResume
-            ? `
-              <a
-                href="./assets/resumes/${resume.filename}"
-                class="btn btn-primary"
-                download
-              >
-                Download Resume
-              </a>
-            `
-            : `
-              <button
-                type="button"
-                class="btn btn-primary disabled-btn"
-                disabled
-              >
-                Coming Soon
-              </button>
-            `
-        }
+      ${
+        hasResume
+          ? `
+            <a
+              href="./assets/resumes/${resume.filename}"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary"
+            >
+              View Resume
+            </a>
+          `
+          : `
+            <button
+              type="button"
+              class="btn btn-primary disabled-btn"
+              disabled
+            >
+              Coming Soon
+            </button>
+          `
+      }
       </div>
     `;
 
