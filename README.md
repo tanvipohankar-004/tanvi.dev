@@ -70,10 +70,6 @@ A movie discovery platform built to explore trending and popular films through a
 
 A fragrance-focused web experience currently under development, focused on product discovery and premium user experience.
 
-### Airline Reservation Management System
-
-Upcoming backend-focused project planned using Java, SQL, Spring Boot, Hibernate, and REST APIs.
-
 ## Research Publication
 
 ### Herbipedia: A Web-Based Educational Platform for Herbal Knowledge
@@ -109,7 +105,7 @@ https://github.com/tanvipohankar-004
 
 ---
 <p>
-  <img src="./assets/images/logo/tanvi-logo.png" alt="Tanvi.Dev Logo" width="40">
+  <h3>Tanvi Pohankar</h3>
   <h4>Designed and developed by Tanvi G. Pohankar.</h4 >
 </p>
 
